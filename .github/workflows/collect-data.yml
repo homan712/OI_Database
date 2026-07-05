@@ -1,0 +1,52 @@
+name: Collect Option Data
+
+on:
+  schedule:
+    # 10:00 AM New York time during EDT. Adjust if you want a different market-time routine.
+    - cron: '0 14 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: Comma-separated tickers
+        required: false
+        default: SPY,QQQ,NVDA,SPCX
+      snapshot_date:
+        description: Snapshot date in YYYY-MM-DD. Leave blank for today.
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Collect real option data
+        run: |
+          if [ -n "${{ github.event.inputs.snapshot_date }}" ]; then
+            npm run collect:real -- --tickers "${{ github.event.inputs.tickers || 'SPY,QQQ,NVDA,SPCX' }}" --date "${{ github.event.inputs.snapshot_date }}"
+          else
+            npm run collect:real -- --tickers "${{ github.event.inputs.tickers || 'SPY,QQQ,NVDA,SPCX' }}"
+          fi
+
+      - name: Commit snapshot files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'data: collect option snapshots'
+          file_pattern: data/**/*.json data/**/*.csv

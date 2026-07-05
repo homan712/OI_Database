@@ -1,0 +1,248 @@
+{
+  "ticker": "SPY",
+  "expiry_date": "2026-07-06",
+  "snapshot_date": "2026-07-06",
+  "snapshot_sequence": 1,
+  "snapshot_label": "Jul 06, 2026 (1)",
+  "days_to_expiry": 0,
+  "expiry_type": "daily",
+  "underlying_price": 630.25,
+  "total_call_oi": 157146,
+  "total_put_oi": 147792,
+  "total_oi": 304938,
+  "gex_total": 666797,
+  "max_pain": 630,
+  "expected_move": 10.08,
+  "rows": [
+    {
+      "strike": 575,
+      "call_oi": 3027,
+      "put_oi": 4536,
+      "call_gex": 14348,
+      "put_gex": -45297,
+      "total_gex": -30949,
+      "volume": 1265,
+      "probability": 14.27
+    },
+    {
+      "strike": 580,
+      "call_oi": 4726,
+      "put_oi": 4592,
+      "call_gex": 28072,
+      "put_gex": -44678,
+      "total_gex": -16606,
+      "volume": 2838,
+      "probability": 19.98
+    },
+    {
+      "strike": 585,
+      "call_oi": 5879,
+      "put_oi": 4009,
+      "call_gex": 41976,
+      "put_gex": -37977,
+      "total_gex": 3999,
+      "volume": 3746,
+      "probability": 27.09
+    },
+    {
+      "strike": 590,
+      "call_oi": 6014,
+      "put_oi": 5078,
+      "call_gex": 50157,
+      "put_gex": -46800,
+      "total_gex": 3357,
+      "volume": 3723,
+      "probability": 35.59
+    },
+    {
+      "strike": 595,
+      "call_oi": 5331,
+      "put_oi": 6328,
+      "call_gex": 50858,
+      "put_gex": -56696,
+      "total_gex": -5838,
+      "volume": 2311,
+      "probability": 45.27
+    },
+    {
+      "strike": 600,
+      "call_oi": 6546,
+      "put_oi": 6792,
+      "call_gex": 70304,
+      "put_gex": -59110,
+      "total_gex": 11194,
+      "volume": 3730,
+      "probability": 55.79
+    },
+    {
+      "strike": 605,
+      "call_oi": 7867,
+      "put_oi": 6473,
+      "call_gex": 93932,
+      "put_gex": -54672,
+      "total_gex": 39260,
+      "volume": 5355,
+      "probability": 66.59
+    },
+    {
+      "strike": 610,
+      "call_oi": 8196,
+      "put_oi": 6407,
+      "call_gex": 107695,
+      "put_gex": -52470,
+      "total_gex": 55225,
+      "volume": 5149,
+      "probability": 76.99
+    },
+    {
+      "strike": 615,
+      "call_oi": 7628,
+      "put_oi": 7927,
+      "call_gex": 109386,
+      "put_gex": -62884,
+      "total_gex": 46502,
+      "volume": 3553,
+      "probability": 86.22
+    },
+    {
+      "strike": 620,
+      "call_oi": 8345,
+      "put_oi": 8799,
+      "call_gex": 129681,
+      "put_gex": -67543,
+      "total_gex": 62138,
+      "volume": 4328,
+      "probability": 93.52
+    },
+    {
+      "strike": 625,
+      "call_oi": 9819,
+      "put_oi": 8836,
+      "call_gex": 164370,
+      "put_gex": -65559,
+      "total_gex": 98811,
+      "volume": 6785,
+      "probability": 98.26
+    },
+    {
+      "strike": 630,
+      "call_oi": 10344,
+      "put_oi": 8243,
+      "call_gex": 185571,
+      "put_gex": -59043,
+      "total_gex": 126528,
+      "volume": 6797,
+      "probability": 100
+    },
+    {
+      "strike": 635,
+      "call_oi": 8946,
+      "put_oi": 8467,
+      "call_gex": 150830,
+      "put_gex": -62604,
+      "total_gex": 88226,
+      "volume": 4480,
+      "probability": 98.57
+    },
+    {
+      "strike": 640,
+      "call_oi": 8143,
+      "put_oi": 8754,
+      "call_gex": 127519,
+      "put_gex": -66972,
+      "total_gex": 60547,
+      "volume": 3774,
+      "probability": 94.12
+    },
+    {
+      "strike": 645,
+      "call_oi": 8732,
+      "put_oi": 8250,
+      "call_gex": 126265,
+      "put_gex": -65234,
+      "total_gex": 61031,
+      "volume": 5943,
+      "probability": 87.04
+    },
+    {
+      "strike": 650,
+      "call_oi": 8438,
+      "put_oi": 6968,
+      "call_gex": 111888,
+      "put_gex": -56886,
+      "total_gex": 55002,
+      "volume": 5772,
+      "probability": 77.98
+    },
+    {
+      "strike": 655,
+      "call_oi": 7144,
+      "put_oi": 6010,
+      "call_gex": 86157,
+      "put_gex": -50607,
+      "total_gex": 35550,
+      "volume": 3738,
+      "probability": 67.66
+    },
+    {
+      "strike": 660,
+      "call_oi": 5845,
+      "put_oi": 6572,
+      "call_gex": 63477,
+      "put_gex": -57026,
+      "total_gex": 6451,
+      "volume": 2396,
+      "probability": 56.87
+    },
+    {
+      "strike": 665,
+      "call_oi": 6545,
+      "put_oi": 6477,
+      "call_gex": 63225,
+      "put_gex": -57864,
+      "total_gex": 5361,
+      "volume": 4328,
+      "probability": 46.3
+    },
+    {
+      "strike": 670,
+      "call_oi": 6443,
+      "put_oi": 5548,
+      "call_gex": 54508,
+      "put_gex": -50989,
+      "total_gex": 3519,
+      "volume": 4548,
+      "probability": 36.51
+    },
+    {
+      "strike": 675,
+      "call_oi": 5320,
+      "put_oi": 3997,
+      "call_gex": 38623,
+      "put_gex": -37760,
+      "total_gex": 863,
+      "volume": 2875,
+      "probability": 27.88
+    },
+    {
+      "strike": 680,
+      "call_oi": 3540,
+      "put_oi": 4229,
+      "call_gex": 21452,
+      "put_gex": -41038,
+      "total_gex": -19586,
+      "volume": 1258,
+      "probability": 20.63
+    },
+    {
+      "strike": 685,
+      "call_oi": 4328,
+      "put_oi": 4500,
+      "call_gex": 21034,
+      "put_gex": -44822,
+      "total_gex": -23788,
+      "volume": 2749,
+      "probability": 14.78
+    }
+  ]
+}
