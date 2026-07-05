@@ -34,7 +34,12 @@ jobs:
 
       - name: Smoke test
         run: |
+          npm run api &
           npm run dev -- --host 127.0.0.1 --port 5174 &
+          for i in {1..30}; do
+            curl -fsS http://127.0.0.1:5175/api/snapshots && break
+            sleep 1
+          done
           for i in {1..30}; do
             curl -fsS http://127.0.0.1:5174 && break
             sleep 1
